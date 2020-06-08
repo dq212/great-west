@@ -1,21 +1,18 @@
-var TIAA = TIAA || {};
+var GW = GW || {};
 
-(function() {
-	"use strict";
-	
-	TIAA.useFallback = function() {
-		var IE_FALLBACK_VERSION = 9;
+(function () {
+  'use strict';
 
-		var rv = -1;
-		var ua = navigator.userAgent;
-		var re = new RegExp( 'MSIE ([0-9]{1,}[\.0-9]{0,})' );
+  GW.useFallback = function () {
+    var IE_FALLBACK_VERSION = 9;
 
-		if ( re.exec( ua ) !== null )
-			rv = parseFloat( RegExp.$1 );
+    var rv = -1;
+    var ua = navigator.userAgent;
+    var re = new RegExp('MSIE ([0-9]{1,}[.0-9]{0,})');
 
-		if ( rv > 0 && rv <= IE_FALLBACK_VERSION ) 
-			return true;
-		else
-			return false;
-	};
+    if (re.exec(ua) !== null) rv = parseFloat(RegExp.$1);
+
+    if (rv > 0 && rv <= IE_FALLBACK_VERSION) return true;
+    else return false;
+  };
 })();

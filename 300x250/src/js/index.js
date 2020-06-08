@@ -1,4 +1,4 @@
-var nameSpace = TIAA || {};
+var nameSpace = GW || {};
 
 (function () {
   'use strict';
@@ -145,13 +145,23 @@ var nameSpace = TIAA || {};
       .to('#copy-effect-2', 0.3, { autoAlpha: 1 }, '+=0.5')
       .to('#copy-2', 0.1, { autoAlpha: 1 }, '-=0.3')
 
-      .to('#copy-effect-2', 0.2, { autoAlpha: 0, ease: 'bubbleIn' }, '+=2.2')
+      .to(
+        '#copy-effect-2',
+        0.2,
+        {
+          autoAlpha: 0,
+          scale: 0.6,
+          transformOrigin: '30% 20%',
+          ease: 'bubbleIn',
+        },
+        '+=2.2'
+      )
       .to('#copy-2', 0.1, { autoAlpha: 0 }, '-=0.2')
       .to(
         '#bubble-1',
         0.4,
         { scale: 0, autoAlpha: 0, ease: Power4.easeIn },
-        '-=0.4'
+        '-=0.25'
       )
       .to('#bubble-2', 0.5, { scale: 1, autoAlpha: 1, ease: 'bubbleIn' })
       .to('#copy-effect-3', 0.3, { autoAlpha: 1 }, '-=0.3')
@@ -197,7 +207,7 @@ function loop() {
   if (count < 2) {
     console.log(count);
     count++;
-    TIAA.init();
+    GW.init();
   }
 }
 //
