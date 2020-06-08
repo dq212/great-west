@@ -1,0 +1,150 @@
+@import 'compass/reset';
+@import 'compass/css3';
+@import 'compass/css3/transform';
+@import 'compass/utilities/sprites';
+
+// set up variables
+$width: 320px;
+$height: 50px;
+
+// Uncomment to include sprites in your banner
+// $sprites: sprite-map("sprites/*.png");
+
+// to use sprites, place the image in the sprites folder and set the background for the desired element as follows:
+// .element { background: sprite($sprites, image-name); }
+
+// set all elements to be box-sizing: border box to include any border, padding and content, but not margin.
+*,
+:before,
+:after {
+  @include box-sizing(border-box);
+}
+
+// 100% width and height elements that can be positioned easily absolutely
+.abs-pos {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: $width;
+  height: $height;
+  overflow: hidden;
+}
+
+#bg {
+  @extend .abs-pos;
+  //background-color:#ffffff;
+  background-color: #1e9647;
+  //background-image: url(../img/static.jpg);
+}
+
+#bg-color {
+  position: absolute;
+  top: 0;
+  height: 34px;
+  width: 1600px;
+  background-color: #fff;
+}
+#bg-color2 {
+  position: absolute;
+  height: 34px;
+  width: 160px;
+  bottom: 0px;
+  background-color: #fff;
+}
+#copy-rel {
+  @extend .abs-pos;
+  position: relative;
+}
+
+#wrapper {
+  @extend .abs-pos;
+  position: relative;
+  visibility: hidden;
+  &.show {
+    visibility: visible;
+  }
+}
+
+#click_through {
+  @extend .abs-pos;
+  z-index: 999;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000000;
+}
+
+#logo {
+  @extend .abs-pos;
+  //left:-64px;
+}
+
+#copy-1 {
+  @extend .abs-pos;
+}
+#copy-2 {
+  @extend .abs-pos;
+}
+
+#copy-3 {
+  @extend .abs-pos;
+}
+
+#copy-4 {
+  @extend .abs-pos;
+}
+
+#copy-effect-1 {
+  @extend .abs-pos;
+}
+
+#copy-effect-2 {
+  @extend .abs-pos;
+}
+
+#bubble-1 {
+  position: absolute;
+  width: 120px;
+  height: auto;
+  top: -17px;
+  left: 27px;
+}
+
+#bubble-2 {
+  position: absolute;
+  width: 116px;
+  height: auto;
+  top: -23px;
+  left: 383px;
+}
+
+#copy-effect-3 {
+  @extend .abs-pos;
+}
+
+#cta {
+  @extend .abs-pos;
+}
+
+#hand {
+  @extend .abs-pos;
+}
+
+#line {
+  @extend .abs-pos;
+}
+
+#btn-minus {
+  @extend .abs-pos;
+}
+#btn-plus {
+  @extend .abs-pos;
+}
+
+#allNums {
+  position: absolute;
+  top: -105px;
+  left: -1px;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+}

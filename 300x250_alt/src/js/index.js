@@ -1,4 +1,4 @@
-var nameSpace = TIAA || {};
+var nameSpace = GW || {};
 
 (function () {
   'use strict';
@@ -201,7 +201,7 @@ function loop() {
   if (count < 2) {
     console.log(count);
     count++;
-    TIAA.init();
+    GW.init();
   }
 }
 //

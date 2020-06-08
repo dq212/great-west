@@ -1,0 +1,41 @@
+{
+  "name": "skynn_banner_generator",
+  "repository": "",
+  "version": "1.0.0",
+  "description": "Banner generated with Skynn",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "resize": "resize-banner"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "graceful-fs": "^4.2.4",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-compass": "^2.1.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^6.2.0",
+    "gulp-inline": "^0.1.1",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-open": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "gulp-zip": "^3.2.0",
+    "image-size": "^0.5.0",
+    "jshint": "^2.11.1",
+    "minimatch": "^3.0.2",
+    "natives": "^1.1.6",
+    "resize-banner": "git+https://github.com/benjanes/resize-banner.git#master",
+    "yargs": "^15.3.1"
+  }
+}

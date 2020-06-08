@@ -2,7 +2,7 @@ var fs = require('fs');
 var imageSize = require('image-size');
 
 describe('zipfile', function () {
-  it('should be under /Users/jofo/git/o2klBanners/o2kl-TIAA-BannerAds/4224-4225-IAS-DIS/BigPicture/300x250/node_modules/.bin/resize-bannekb', function () {
+  it('should be under 150k', function () {
     var zip = fs.statSync('4841_GW_ADA_Student_Activation_300x250_HTML.zip');
     var fileSizeInKB = zip['size'] / 1000;
     expect(fileSizeInKB).not.toBeGreaterThan(
